@@ -1,0 +1,26 @@
+{
+  "name": "real-time-visualization",
+  "version": "0.0.0",
+  "authors": [
+    "Ken Chan <KChan923@gmail.com>"
+  ],
+  "description": "Real-Time Visualization of Log Files",
+  "keywords": [
+    "d3",
+    "logs",
+    "sockets"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "./public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.6",
+    "angular": "~1.4.3",
+    "bootstrap": "~3.3.5"
+  }
+}

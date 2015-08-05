@@ -1,0 +1,35 @@
+Socket.IO - bidirectional WebSocket connection.
+          - propagate file changes in real-time to the client.
+
+- Implement a static file server with Node.js, npm and Express.js
+- Implement real-time server push with Socket.IO
+- Learn how to read and monitor files with Node.js
+- Set up a simple web client with Bootstrap
+- Learn to use Socket.IO with AngularJS
+- Create custom parsers for different log types
+
+serve-static: create a new middleware function to serve files from within a given root directory.
+
+Standard HTTP requests are unidirectional from client to server.
+  One request, one response.
+(Not possible to notify the client about immediate data changes.)
+WebSockets - bidirectional TCP connection for the Web.
+
+.on('connection', callback)
+
+  Execute code whenever the client connects to the server via WebSockets.
+
+.on('disconnect', callback)
+
+  Clean up after the client disconnects.
+
+.on(type, callback)
+
+  Generic template of the function used to listen for custom events that are triggered by the client (for example, to transfer data from the client to the server.)
+
+  Within callback function
+    - Argument 1 - data sent by the client.
+
+.emit(type, data)
+
+  send data form the server to the client.
